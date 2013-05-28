@@ -33,7 +33,7 @@ describe Sinatrify do
           Base.mapper.should == "mapper"
           Base.send(:remove_instance_variable,:@mapper)
         end
-        
+
         it "should use the AD mapper" do
           Base.mapper.class.should == ActionDispatch::Routing::Mapper
         end
