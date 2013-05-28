@@ -13,6 +13,8 @@ class ShowoffController < ApplicationController
 end
 ```
 
+[![Build Status](https://api.travis-ci.org/shime/sinatrify.png)](https://travis-ci.org/shime/sinatrify)
+
 ## Installation
 
 Add it to the Gemfile
