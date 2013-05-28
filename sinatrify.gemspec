@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
 
   # cool terminal inside cucumber features
   # for more info check: https://github.com/cucumber/aruba/
-  s.add_development_dependency "aruba"      
+  s.add_development_dependency "aruba"
   s.add_development_dependency "cucumber"
 
   s.add_development_dependency "appraisal" # thanks Thoughtbot!

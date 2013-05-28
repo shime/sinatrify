@@ -1,7 +1,7 @@
 Feature: Sinatrify is cool
-  When Sinatrify is included inside a Rails app
-  It provides Sinatra-style actions
-  That make building an API a lot easier
+
+  When Sinatrify is included inside a Rails app, it provides a
+  Sinatra-like DSL that makes building an API much easier
 
   Background: Create new rails app
     Given I successfully run `rails new example_app --skip-gemfile -O`
