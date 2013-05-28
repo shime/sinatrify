@@ -19,6 +19,8 @@ end
 
 require "appraisal"
 
+GEMFILES = Dir["./gemfiles/*"].map {|f| f.gsub(/^./,`pwd`.strip)}
+
 task :appraise => ["appraisal:install"] do
   exec 'rake appraisal cucumber'
 end
@@ -32,6 +34,8 @@ RDoc::Task.new(:rdoc) do |rdoc|
 end
 
 Cucumber::Rake::Task.new(:cucumber) do |t|
+  raise "Rails Gemfile not specified, make sure your BUNDLE_GEMFILE is set to "\
+    "a Gemfile from ./gemfiles when running cucumber features." if !GEMFILES.include? ENV["BUNDLE_GEMFILE"]
   t.cucumber_opts = "--tags ~@wip"
 end
 
@@ -40,5 +44,5 @@ Rake::TestTask.new(:test) do |t|
   system("rspec spec")
 end
 
-task :default do
+task :default => [:test, :cucumber] do
 end
