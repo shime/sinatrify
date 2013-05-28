@@ -3,14 +3,14 @@
 Make Rails controllers look like Sinatra.
 
 ```ruby
- class ShowoffController < ApplicationController
+class ShowoffController < ApplicationController
     
-    include Sinatrify::DSL
+  include Sinatrify::DSL
    
-    get "/greet" do
-       render :text => "Hello!"
-    end
- end
+  get "/greet" do
+    render :text => "Hello!"
+  end
+end
 ```
 
 ## Installation
