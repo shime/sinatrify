@@ -4,8 +4,3 @@
       gem "sinatrify", :path => "../"
    end 
 end
-
-appraise "edge" do
-  gem "rails",     :git => "git://github.com/rails/rails.git"
-  gem "sinatrify", :path => "../"
-end

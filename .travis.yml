@@ -10,7 +10,6 @@ gemfile:
   - gemfiles/3.0.17.gemfile
   - gemfiles/3.1.8.gemfile
   - gemfiles/3.2.8.gemfile
-  - gemfiles/edge.gemfile
 matrix:
   exclude:
     - rvm: 2.0.0

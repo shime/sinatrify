@@ -20,7 +20,7 @@ end
 
 * Dress your Rails controller in a classy Sinatra suit
 * High test coverage
-* Integration tests for every major Rails release (including the latest edge)
+* Integration tests for every major Rails release
 
 ## Installation
 
