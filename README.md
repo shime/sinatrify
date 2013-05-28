@@ -15,6 +15,13 @@ end
 
 [![Build Status](https://api.travis-ci.org/shime/sinatrify.png)](https://travis-ci.org/shime/sinatrify)
 
+
+## Features
+
+* Dress your Rails controller in a classy Sinatra suit
+* High test coverage
+* Integration tests for every major Rails release (including the latest edge)
+
 ## Installation
 
 Add it to the Gemfile
