@@ -2,6 +2,10 @@
 
 Make Rails controllers look like Sinatra.
 
+Heavily inspired by Carl Lerche's "[Astaire](https://github.com/carllerche/astaire)".
+
+The lambda inside Rails routes was taken from Jose Valim's [gist](https://gist.github.com/josevalim/3717973).
+
 ```ruby
 class ShowoffController < ApplicationController
     
